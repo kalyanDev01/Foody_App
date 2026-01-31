@@ -842,7 +842,6 @@ border-bottom: 2px solid orangered;
   }
 }
 /*  */
-
 .footer {
   background: #111;
   color: #bbb;
@@ -884,7 +883,6 @@ border-bottom: 2px solid orangered;
 .footer-box ul li {
   margin-bottom: 12px;
 }
-
 /* Links Hover */
 .links a {
   color: #bbb;
@@ -895,7 +893,6 @@ border-bottom: 2px solid orangered;
   color: #4CAF17;
   padding-left: 5px;
 }
-
 /* Social Icons */
 .social {
   display: flex;
