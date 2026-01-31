@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foody</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="top-left">
+    <span><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</span>
+    <span><i class="fa-solid fa-envelope"></i> info@example.com</span>
+  </div>
+  <div class="top-right">
+    <span>Follow us:</span>
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-linkedin-in"></i>
+    <i class="fab fa-instagram"></i>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <span class="green">F</span><span class="orange">oo</span><span class="green">dy</span>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Pages</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+
+  <div class="nav-icons">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-regular fa-user"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
+  </div>
+
+  <!-- Mobile Menu Icon -->
+  <div class="menu-icon" id="menuIcon">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+</nav>
+
+<!--landing page -->
+
+<section class="landing">
+    <div class="landing-text">
+      <h2>Natural Food Is <br> Always Healthy</h2>
+      <div class="buttons">
+        <button class="prd-btn">Products</button>
+        <button class="ser-btn">Services</button>
+      </div>
+    </div>
+
+    <div class="landing-img">
+      <img src="./images/landing pg img.jpg" alt="Vegetable Basket">
+    </div>
+  </section>
+
+  <!-- organice section -->
+  <section class="organic-section">
+  <div class="organic-container">
+
+    <div class="organic-img">
+      <img src="./images/senior-woman-with-vegetables.jpg" alt="Organic Farmer">
+    </div>
+
+    <div class="organic-content">
+      <h2>Best Organic Fruits And Vegetables</h2>
+
+      <p>
+        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+        Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+        sed stet lorem sit clita duo justo magna dolore erat amet.
+      </p>
+
+      <ul>
+        <li>Tempor erat elitr rebum at clita</li>
+        <li>Aliqu diam amet diam et eos</li>
+        <li>Clita duo justo magna dolore erat amet</li>
+      </ul>
+
+      <a href="#" class="read-btn">Read More</a>
+    </div>
+
+  </div>
+</section>
+<!--features section  -->
+<section class="features-section">
+  <div class="features-header">
+    <h2>Our Features</h2>
+    <p>
+      Tempor ut dolore lorem kasd vero ipsum sit eirmod sit.
+      Ipsum diam justo sed rebum vero dolor duo.
+    </p>
+  </div>
+
+  <div class="features-container">
+
+    <div class="feature-card">
+      <img src="./images/plant.png" alt="Natural Process">
+      <h3>Natural Process</h3>
+      <p>
+        Tempor ut dolore lorem kasd vero ipsum sit eirmod sit.
+        Ipsum diam justo sed vero dolor duo.
+      </p>
+      <a href="#">Read More</a>
+    </div>
+
+    <div class="feature-card">
+      <img src="./images/plant (1).png" alt="Organic Products">
+      <h3>Organic Products</h3>
+      <p>
+        Tempor ut dolore lorem kasd vero ipsum sit eirmod sit.
+        Ipsum diam justo sed vero dolor duo.
+      </p>
+      <a href="#">Read More</a>
+    </div>
+
+    <div class="feature-card">
+      <img src="./images/worldwide.png" alt="Biologically Safe">
+      <h3>Biologically Safe</h3>
+      <p>
+        Tempor ut dolore lorem kasd vero ipsum sit eirmod sit.
+        Ipsum diam justo sed vero dolor duo.
+      </p>
+      <a href="#">Read More</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- our product -->
+<section class="products-section">
+  <div class="products-container">
+
+    <div class="products-text">
+      <h1>Our Products</h1>
+      <p>
+        Tempor ut dolore lorem kasd vero ipsum sit eirmod sit.
+        Ipsum diam justo sed rebum vero dolor duo.
+      </p>
+    </div>
+
+    <div class="products-buttons">
+      <button class="btn active">Vegetable</button>
+      <button class="btn">Fruits</button>
+      <button class="btn">Fresh</button>
+    </div>
+
+  </div>
+ 
+<!-- our products -->
+  <section class="products">
+  <div class="product-card">
+    <span class="badge">New</span>
+    <div class="img-box">
+      <img src="./images/tmtto.jpg" alt="Tomato">
+    </div>
+    <h3>Fresh Tomato</h3>
+    <p class="price">
+      <span class="new">$19.00</span>
+      <span class="old">$29.00</span>
+    </p>
+    <div class="actions">
+      <button>View detail</button>
+
+      <button class="cart" onclick="orderPlaced()">Buy Now</button>
+
+    
+    </div>
+  </div>
+
+  <div class="product-card">
+    <span class="badge">New</span>
+    <div class="img-box">
+      <img src="./images/crtttt.webp" alt="Pineapple">
+    </div>
+    <h3>Fresh Carrot</h3>
+    <p class="price">
+      <span class="new">$19.00</span>
+      <span class="old">$29.00</span>
+    </p>
+    <div class="actions">
+      <button>View detail</button>
+    <button class="cart" onclick="orderPlaced()">Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <span class="badge">New</span>
+    <div class="img-box">
+      <img src="./images/chilli.jpg" alt="Chilli">
+    </div>
+    <h3>Fresh Chilli</h3>
+    <p class="price">
+      <span class="new">$19.00</span>
+      <span class="old">$29.00</span>
+    </p>
+    <div class="actions">
+      <button>View detail</button>
+     <button class="cart" onclick="orderPlaced()">Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <span class="badge">New</span>
+    <div class="img-box">
+      <img src="./images/strawberries-1396330_1920.jpg" alt="Strawberry">
+    </div>
+    <h3>Fresh Strawberry</h3>
+    <p class="price">
+      <span class="new">$19.00</span>
+      <span class="old">$29.00</span>
+    </p>
+    <div class="actions">
+      <button>View detail</button>
+      <button class="cart" onclick="orderPlaced()">Buy Now</button>
+    </div>
+  </div>
+</section>
+<section class="products">
+  <div class="product-card">
+    <span class="badge">New</span>
+    <div class="img-box">
+      <img src="./images/cucbar.jpg" alt="Tomato">
+    </div>
+    <h3>Fresh Cucumbar</h3>
+    <p class="price">
+      <span class="new">$19.00</span>
+      <span class="old">$29.00</span>
+    </p>
+    <div class="actions">
+      <button>View detail</button>
+      <button class="cart" onclick="orderPlaced()">Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <span class="badge">New</span>
+    <div class="img-box">
+      <img src="./images/pinapple.jpeg" alt="Pineapple">
+    </div>
+    <h3>Fresh Pineapple</h3>
+    <p class="price">
+      <span class="new">$19.00</span>
+      <span class="old">$29.00</span>
+    </p>
+    <div class="actions">
+      <button>View detail</button>
+      <button class="cart" onclick="orderPlaced()">Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <span class="badge">New</span>
+    <div class="img-box">
+      <img src="./images/poteteo.jpeg" alt="Chilli">
+    </div>
+    <h3>Fresh Poteto</h3>
+    <p class="price">
+      <span class="new">$19.00</span>
+      <span class="old">$29.00</span>
+    </p>
+    <div class="actions">
+      <button>View detail</button>
+      <button class="cart" onclick="orderPlaced()">Buy Now</button>
+    </div>
+  </div>
+
+  <div class="product-card">
+    <span class="badge">New</span>
+    <div class="img-box">
+      <img src="./images/banana.jpg" alt="Strawberry">
+    </div>
+    <h3>Fresh Banana</h3>
+    <p class="price">
+      <span class="new">$19.00</span>
+      <span class="old">$29.00</span>
+    </p>
+    <div class="actions">
+      <button>View detail</button>
+      <button class="cart" onclick="orderPlaced()">Buy Now</button>
+    </div>
+  </div>
+</section>
+
+<section class="visit-firm">
+  <div class="visit-content">
+    <h2>Visit Our Firm</h2>
+    <p>
+      Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+      Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+      sed stet lorem sit clita duo justo magna dolore erat amet.
+      Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+    </p>
+  </div>
+
+  <div class="visit-btn">
+    <a href="#">Visit Now</a>
+  </div>
+</section>
+
+<!--customer review-->
+<section class="review-section">
+  <h2>Customer Review</h2>
+  <p class="sub-text">
+    Tempor ut dolore lorem kasd vero ipsum sit eirmod sit.
+    Ipsum diam justo sed rebum vero dolor duo.
+  </p>
+
+  <div class="review-cards">
+
+    <!-- Card 1 -->
+    <div class="review-card">
+      <span class="quote">“</span>
+      <p>
+        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
+        diam amet diam et eos. Clita erat ipsum et lorem et sit.
+      </p>
+
+      <div class="client">
+        <img src="./images/clinet 1.avif" alt="">
+        <div>
+          <h4>Harry</h4>
+          <span>Teacher</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 (Active) -->
+    <div class="review-card active">
+      <span class="quote">“</span>
+      <p>
+        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
+        diam amet diam et eos. Clita erat ipsum et lorem et sit.
+      </p>
+
+      <div class="client">
+        <img src="./images/clint2.avif" alt="">
+        <div>
+          <h4>John</h4>
+          <span>Agriculture</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="review-card">
+      <span class="quote">“</span>
+      <p>
+        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
+        diam amet diam et eos. Clita erat ipsum et lorem et sit.
+      </p>
+
+      <div class="client">
+        <img src="./images/clinet3.avif" alt="">
+        <div>
+          <h4>Cherry</h4>
+          <span>Bussiness</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="review-nav">
+  <button class="nav-btn">
+    &#10094;
+  </button>
+
+  <button class="nav-btn">
+    &#10095;
+  </button>
+</div>
+</section>
+
+<section class="blog-section">
+  <h2>Latest Blog</h2>
+  <p class="blog-sub">
+    Tempor ut dolore lorem kasd vero ipsum sit eirmod sit.
+    Ipsum diam justo sed rebum vero dolor duo.
+  </p>
+
+  <div class="blog-grid">
+
+    <!-- Blog Card 1 -->
+    <div class="blog-card">
+      <div class="blog-img">
+        <img src="./images/cultivatepic 1.avif" alt="Blog Image">
+      </div>
+      <div class="blog-content">
+        <h3>How to cultivate organic fruits and vegetables</h3>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+
+    <!-- Blog Card 2 -->
+    <div class="blog-card">
+      <div class="blog-img">
+        <img src="./images/cultivate pic 2.jpg" alt="Blog Image">
+      </div>
+      <div class="blog-content">
+        <h3>How to cultivate organic fruits and vegetables</h3>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+
+    <!-- Blog Card 3 -->
+    <div class="blog-card">
+      <div class="blog-img">
+        <img src="./images/cultivate pic 3.jpg" alt="Blog Image">
+      </div>
+      <div class="blog-content">
+        <h3>How to cultivate organic fruits and vegetables</h3>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-box">
+      <h2 class="logo">
+       <h1 class="logo">F<span>oo</span>dy</h1>
+      </h2>
+      <p>
+        Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+        Clita erat ipsum et lorem et sit, sed stet lorem sit clita.
+      </p>
+
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-twitter" style="color: #f7f7f8;"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube" style="color: #f7f7f7;"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+      </div>
+    </div>
+
+    <!-- Address -->
+    <div class="footer-box">
+      <h3>Address</h3>
+      <ul>
+        <li>📍 123 Street, New York, USA</li>
+        <li>📞 +012 345 67890</li>
+        <li>✉ info@example.com</li>
+      </ul>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul class="links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Terms & Condition</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-box">
+      <h3>Newsletter</h3>
+      <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+
+      <form class="newsletter">
+        <input type="email" placeholder="Your email">
+        <button>SignUp</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© Your Site Name, All Right Reserved.</p>
+    <p>Designed By <span>HTML Codex</span></p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
