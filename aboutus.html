@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="aboutus.js"></script>
+</head>
+
+<body>
+    <div class="headerImg">
+        <div class="address">
+            <div class="address_s1">
+                <i class="fa-solid fa-location-dot" style="color: #555555;"></i>
+                <p>123 Street, New York, USA</p>
+                <i class="fa-solid fa-envelope" style="color: #555555;"></i>
+                <p>info@example.com</p>
+            </div>
+            <div class="address_s2">
+                <p>Follow us:</p>
+                <i class="fa-brands fa-facebook" style="color: #555555;"></i>
+                <i class="fa-brands fa-twitter" style="color: #555555;"></i>
+                <i class="fa-brands fa-linkedin-in" style="color: #555555;"></i>
+                <i class="fa-brands fa-instagram" style="color: #555555;"></i>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header_s1">
+                <h1 class="header_s1_title">F<span style="color: #F65005;">oo</span>dy</h1>
+            </div>
+            <div class="header_s2">
+                <p><a href="">Home</a></p>
+                <p><a href=""><b>About us</b></a></p>
+                <p><a href="">Products</a></p>
+                <p><a href="">Pages</a></p>
+                <p>Contact us</p>
+                <i class="fa-solid fa-magnifying-glass" id="icon1"></i>
+                <i class="fa-solid fa-circle-user" id="icon2"></i>
+                <i class="fa-solid fa-cart-arrow-down" id="icon3"></i>
+            </div>
+            <div class="header_s4_mb" id="imgHamburger" onclick="openHamburger()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="header_s5_mb" id="imgClose" onclick="closeHamburger()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="header_s3">
+            <h1 class="header_s3_heading">About Us</h1>
+            <p class="header_s3_flow">Home / Pages / <b>About Us</b></p>
+        </div>
+
+    </div>
+
+
+    <div class="organicFruits">
+        <div class="organicFruitsSection">
+            <img src="./img/about.jpg" alt="">
+        </div>
+        <div class="organicFruitsSection">
+            <h1 class="organicFruitsSection_h1">Buy our premium goods in bulk for your shops/hotels</h1>
+            <p>Buy our products</p>
+            <div class="org">
+                <i class="fa-solid fa-check" style="color: #3CB815;"></i>
+                <p>Best Fruits</p>
+            </div>
+            <div class="org">
+                <i class="fa-solid fa-check" style="color: #3CB815;"></i>
+                <p>Best Veggies</p>
+            </div>
+            <div class="org">
+                <i class="fa-solid fa-check" style="color: #3CB815;"></i>
+                <p>Best Grains and Pulses</p>
+            </div>
+            <button class="readMore">
+                Read More
+            </button>
+        </div>
+    </div>
+
+    <div class="visitOurFirm">
+        <div class="visitOurFirm_s1">
+            <h1>Visit our Firm</h1>
+            <p>Discover our state-of-the-art facility where we carefully select, clean, and package the freshest organic
+                produce. Our dedicated team ensures every product meets our strict quality standards before reaching
+                your table. Experience farm-fresh quality you can taste and trust.</p>
+        </div>
+        <div class="visitOurFirm_s2">
+            <button>Visit Now</button>
+        </div>
+    </div>
+
+    <div class="addToBulkOrder">
+        <h2>Select from below to proceed(Order above 5kg)</h2>
+        <h4>Cereals</h4>
+        <div class="cerials">
+            <button id="items" onclick="addToBulkOrders(event)">Thoor Dhal ₹120/kg</button>
+            <button id="items" onclick="addToBulkOrders(event)">Urad Dhal ₹47/kg</button>
+            <button id="items" onclick="addToBulkOrders(event)">Chana Dhal ₹66/kg</button>
+            <button id="items" onclick="addToBulkOrders(event)">Moong Dhal ₹80/kg</button>
+            <button id="items" onclick="addToBulkOrders(event)">Masoor Dhal ₹50/kg</button>
+        </div>
+        <h4>Vegetables</h4>
+        <div class="vegetables">
+            <button id="items" onclick="addToBulkOrders(event)">Tomato ₹30/kg</button>
+            <button id="items" onclick="addToBulkOrders(event)">Potato ₹50/kg</button>
+            <button id="items" onclick="addToBulkOrders(event)">Onion ₹40/kg</button>
+            <button id="items" onclick="addToBulkOrders(event)">Carrot ₹70/kg</button>
+            <button id="items" onclick="addToBulkOrders(event)">Cabbage ₹40/kg</button>
+        </div>
+        <h4>Fruits</h4>
+        <div class="fruits">
+            <button id="items" onclick="addToBulkOrders(event)">Apple ₹130/kg</button>
+            <button id="items" onclick="addToBulkOrders(event)">Banana ₹70/kg</button>
+            <button id="items" onclick="addToBulkOrders(event)">Mango ₹78/kg</button>
+            <button id="items" onclick="addToBulkOrders(event)">Orange ₹66/kg</button>
+            <button id="items" onclick="addToBulkOrders(event)">Grapes ₹50/kg</button>
+        </div>
+    </div>
+    <div id="bulk-cart-display" class="bulk-cart-section">
+    </div>
+
+
+    <div class="bulkOrders">
+        <div class="bulk-content">
+            <h2>Bulk Availability Form</h2>
+
+            <form class="bulk-order-form">
+                <div class="form-group">
+                    <label for="customerName">Customer Name *</label>
+                    <div class="inputField">
+                        <input type="text" id="customerName" name="customerName" required>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location *</label>
+                    <div class="inputField">
+                        <input type="text" id="location" name="location" placeholder="e.g. Chennai, Tambaram" required>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="itemsRequired">Items Required *</label>
+                    <div class="inputField">
+                        <textarea id="itemsRequired" name="itemsRequired" rows="4"
+                            placeholder="e.g. Chilli Powder 50kg (Select from above)" required readonly></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="amount">Total Amount *</label>
+                    <div class="inputField">
+                        <input type="text" id="amount" name="amount" placeholder="e.g. ₹30 (Select from above)" required readonly>
+                    </div>
+                </div>
+                <button type="submit" class="formattedButton">
+                    Submit
+                </button>
+                
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer__one">
+            <div class="footer__one__so">
+                <div class="header_s1">
+                    <h1 class="header_s1_title">F<span style="color: #F65005;">oo</span>dy</h1>
+                </div>
+                <p>Fresh organic produce delivered daily to your doorstep</p>
+                <div class="address_s2">
+                    <i class="fa-brands fa-facebook" style="color: #d1d5db;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #d1d5db;"></i>
+                    <i class="fa-brands fa-linkedin-in" style="color: #d1d5db;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #d1d5db;"></i>
+                </div>
+            </div>
+            <div class="footer__one__s1">
+                <h3>Address</h3>
+                <p>123 Street, New York, USA</p>
+                <p>+012 345 67890</p>
+                <p>info@example.com</p>
+            </div>
+            <div class="footer__one__s2">
+                <h3>Quick Links</h3>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Our Service</a>
+                <a href="">Terms and Condition</a>
+                <a href="">Support</a>
+            </div>
+        </div>
+        <div class="footer__two">
+            <p>&copy; Foody, All Rights Reserved</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
