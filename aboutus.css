@@ -32,7 +32,7 @@ i{
 }
 
 .headerImg{
-    background-image: url('./img/carousel-1.jpg');
+    background-image: url('./images/carousel-1.jpg');
     background-size: cover;
     height: 550px;
     top: 0px;
@@ -41,7 +41,7 @@ i{
 .header{
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
     align-items: center;
     position: fixed;
     z-index: 20;
@@ -53,18 +53,25 @@ i{
 .header_s2{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 30px;
 }
 .header_s1_title{
     color: #3CB815;
     font-size: 40px;
 }
-.header_s2 p{
+.header_s2 a{
+    text-decoration: none;
     color: rgba(0,0,0,0.55);
     font-size: 20px;
     cursor: pointer;
 }
-.header_s2 p:hover{
+.header_s2_1, .header_s2_2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.header_s2 a:hover{
     font-weight: bold;
 }
 .header_s3{
