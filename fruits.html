@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody - Organic Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <section class="topbar">
+        <div class="topbar-left">
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>123 Street, New York, USA</p>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <p>info@example.com</p>
+            </div>
+        </div>
+        <div class="topbar-right">
+            <p>Follow Us:</p>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </section>
+    <nav class="navbar">
+        <h1 class="logo">Foody</h1>
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Products</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="nav-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </nav>
+    </section>
+    <section class="hero-slider">
+        <div class="slider-wrapper">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1920&auto=format&fit=crop"
+                    alt="Farm Field">
+                <div class="slide-content">
+                    <h1>Nature's Best Collection</h1>
+                    <p>100% Organic & Natural products harvested daily.</p>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?q=80&w=1920&auto=format&fit=crop"
+                    alt="Fresh Vegetables">
+                <div class="slide-content">
+                    <h1>Fresh From The Farm</h1>
+                    <p>Vegetables packed with nutrients and love.</p>
+                    <button>View Products</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1595855709940-5776ee4596b6?q=80&w=1920&auto=format&fit=crop"
+                    alt="Orchard">
+                <div class="slide-content">
+                    <h1>Healthy Life, Happy Life</h1>
+                    <p>Choose the best for your family's health.</p>
+                    <button>Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products-section">
+    <div class="products-header">
+            <div class="section-title">
+                <h1>Our Fresh Products</h1>
+                <p>We provide fresh and organic fruits and vegetables directly from the farm to your table.</p>
+            </div>
+            
+            <div class="header-controls">
+                <div class="search-wrapper">
+                    <input type="text" id="search-box" placeholder="Search for fruits, vegetables...">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+                <div class="filter-buttons">
+                    <a href="index.html" class="filter-btn active" data-filter="all">All</a>
+                    <a class="filter-btn" data-filter="vegetables">Vegetables</a>
+                    <a href="fruits.html" class="filter-btn" data-filter="fruits">Fruits</a>
+                    <a href="dryfruit.html" class="filter-btn" data-filter="dryfruit">Dried Fruits</a>
+                </div>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/apple.jpg" alt="Apple">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Red Apple</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$8.00</span>
+                        <span class="old-price">$10.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="Fruits">
+                <div class="image-container">
+                    <img src="./image/Tangerine-SpotlessFruitsIndia_1024x1024.webp" alt="Orange">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Juicy Orange</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$8.00</span>
+                        <span class="old-price">$10.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/bananas-1354785_1920-1024x683.avif" alt="Banana">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Organic Banana</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$5.00</span>
+                        <span class="old-price">$7.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/Guava-15d1050d22034909bfca038ef1f8aaa2.jpg" alt="Guava">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Fresh Guava</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$12.00</span>
+                        <span class="old-price">$15.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/mango.jpg" alt="Mango">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Juicy Mango</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$4.00</span>
+                        <span class="old-price">$6.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/320010--01--1549602291.jpeg" alt="Grapes">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Garden Grapes</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$3.50</span>
+                        <span class="old-price">$5.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/watermelon.jpg" alt="watermelon">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Juicy watermelon</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$8.00</span>
+                        <span class="old-price">$10.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/papaya-fruit.webp" alt="Papaya">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Juicy Papaya</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$8.00</span>
+                        <span class="old-price">$10.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/images.jpg" alt="Pineapple">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Fresh Pineapple</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$8.00</span>
+                        <span class="old-price">$10.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="Fruits">
+                <div class="image-container">
+                    <img src="./image/images (1).jpg" alt="Dragon Fruit">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Red Dragon Fruit</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$8.00</span>
+                        <span class="old-price">$10.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/Avocado-sliced-in-half-ca9d808.jpg" alt="Avocado">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Organic Avocaoda</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$5.00</span>
+                        <span class="old-price">$7.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/6744.png" alt="Rambutan">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Juicy Rambutan</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$12.00</span>
+                        <span class="old-price">$15.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/MangosteenFB.jpg" alt="Mangosteen">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Juicy Mangosteen</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$4.00</span>
+                        <span class="old-price">$6.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/durian-die-exotische-superfrucht-fur-mutige-neugierige-169567.webp" alt="Durian">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Organic Durian</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$3.50</span>
+                        <span class="old-price">$5.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/1800x1200_health_benefits_of_strawberry_ref_guide.webp" alt="Strawberry">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Juicy Strawberry</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$8.00</span>
+                        <span class="old-price">$10.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/blueberries_fresh_fullframe_732x549_thumb-732x549.avif" alt="Blueberries">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Homemade Blueberries</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$8.00</span>
+                        <span class="old-price">$10.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/eatJackfruit-823672534-770x533-1_jpg.avif" alt="Jackfruit">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Juicy Jackfruit</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$8.00</span>
+                        <span class="old-price">$10.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="Fruits">
+                <div class="image-container">
+                    <img src="./image/Zitrone_ea3353f5-21ff-476a-b7f2-56d9bb7071aa.webp" alt="lemon">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">organic lemon</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$8.00</span>
+                        <span class="old-price">$10.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/download" alt="Kiwi">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Organic Kiwi</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$5.00</span>
+                        <span class="old-price">$7.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruits">
+                <div class="image-container">
+                    <img src="./image/download (1)" alt="Starfruit">
+                    <div class="overlay">
+                        <button>View Details</button>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <a href="#">Fresh Starfruit</a>
+                    <div class="price">
+                        <span class="100g">100g</span>
+                        <span class="current-price">$12.00</span>
+                        <span class="old-price">$15.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h1 class="footer-logo">Foody</h1>
+                <p>Fresh & Organic food directly from the farm to your doorstep. We ensure quality and freshness in
+                    every delivery.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Products</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>123 Street, New York, USA</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>info@example.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+012 345 67890</span>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get the latest updates and offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">SignUp</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 <span class="green-text">Foody</span>. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
