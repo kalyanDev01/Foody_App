@@ -1,23 +1,17 @@
-//dropdown
-var pagesBtn = document.querySelector(".pages-btn");  
-var pagesBox = document.querySelector(".pages-box");
+const menuIcon = document.getElementById("menuIcon");
+const navLinks = document.getElementById("navLinks");
 
-pagesBtn.addEventListener("click",function(){
-    pagesBox.classList.toggle("show")
-} )
+menuIcon.addEventListener("click", () => {
+  if (navLinks.style.display === "flex") {
+    navLinks.style.display = "none";
+  } else {
+    navLinks.style.display = "flex";
+  }
+});
+function orderPlaced() {
+  alert("Your order is placed ✅");
+}
 
-//sidenav
-var sidenav = document.getElementById("sidenav")
-var menuicon=document.getElementById("menuicon")
-var closebtn=document.getElementById("closebtn")
-
-menuicon.addEventListener("click",function()
-{
-    sidenav.style.right="0"
-})
-closebtn.addEventListener("click",function(){
-    sidenav.style.right="-50%"
-})
 
 
 //contact form

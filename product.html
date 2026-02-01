@@ -8,43 +8,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <section class="topbar">
-        <div class="topbar-left">
-            <div class="info-item">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>123 Street, New York, USA</p>
-            </div>
-            <div class="info-item">
-                <i class="fa-solid fa-envelope"></i>
-                <p>info@example.com</p>
-            </div>
-        </div>
-        <div class="topbar-right">
-            <p>Follow Us:</p>
-            <div class="social-icons">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-        </div>
-    </section>
-    <nav class="navbar">
-        <div class="logo">
+    <!-- Top Bar -->
+<div class="top-bar">
+  <div class="top-left">
+    <span><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</span>
+    <span><i class="fa-solid fa-envelope"></i> info@example.com</span>
+  </div>
+  <div class="top-right">
+    <span>Follow us:</span>
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-linkedin-in"></i>
+    <i class="fab fa-instagram"></i>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
     <span class="green">F</span><span class="orange">oo</span><span class="green">dy</span>
   </div>
-        <div class="nav-links" id="nav-links">
-            <a href="index.html" class="active">Home</a>
-            <a href="aboutus.html">About Us</a>
-            <a href="product.html">Products</a>
-            <a href="contact.html">Contact Us</a>
-        </div>
-        <div class="nav-icons">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-regular fa-user"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-    </nav>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="product.html">Products</a></li>
+    <li><a href="./contact.html">Contact Us</a></li>
+  </ul>
+
+  <div class="nav-icons">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-regular fa-user"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
+  </div>
+
+  <!-- Mobile Menu Icon -->
+  <div class="menu-icon" id="menuIcon">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+</nav>
+    <!-- Hero Slider Section -->
+    <section class="hero-section">
     </section>
     <section class="hero-slider">
         <div class="slider-wrapper">
@@ -165,7 +169,7 @@
             </div>
             <div class="product-card" data-category="fruits">
                 <div class="image-container">
-                    <img src="images/bananaimg5.jpg" alt="Banana">
+                    <img src="image/bananaimg.jpg" alt="Banana">
                     <div class="overlay">
                         <button>View Details</button>
                         <button>Add to Cart</button>
@@ -181,7 +185,7 @@
             </div>
             <div class="product-card" data-category="vegetables">
                 <div class="image-container">
-                    <img src="images/tomatoimg1.jpg" alt="Tomato">
+                    <img src="image/tomatoimg.jpg" alt="Tomato">
                     <div class="overlay">
                         <button>View Details</button>
                         <button>Add to Cart</button>
@@ -288,8 +292,8 @@
 
   <!-- Bottom -->
   <div class="footer-bottom">
-    <p>© Your Site Name, All Right Reserved.</p>
-    <p>Designed By <span>HTML Codex</span></p>
+    <p>© Foody, All Right Reserved.</p>
+    <p>Designed By <span>Null Pointers</span></p>
   </div>
 </footer>
     <script src="product.js"></script>

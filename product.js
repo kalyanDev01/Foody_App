@@ -1,24 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- 1. Mobile Menu Toggle ---
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
+  const menuIcon = document.getElementById("menuIcon");
+const navLinks = document.getElementById("navLinks");
 
-    if (hamburger && navLinks) {
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            
-            // Toggle between Hamburger (bars) and Close (X) icon
-            const icon = hamburger.querySelector('i');
-            if (navLinks.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-xmark');
-            } else {
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
-            }
-        });
-    }
+menuIcon.addEventListener("click", () => {
+  if (navLinks.style.display === "flex") {
+    navLinks.style.display = "none";
+  } else {
+    navLinks.style.display = "flex";
+  }
+});
+function orderPlaced() {
+  alert("Your order is placed ✅");
+}
+
     // --- 2. Product Filtering Logic ---
     const filterButtons = document.querySelectorAll('.filter-btn');
     const productCards = document.querySelectorAll('.product-card');

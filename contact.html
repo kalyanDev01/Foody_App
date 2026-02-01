@@ -16,87 +16,45 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
-    <!--topnav-->
-    <section class="top-nav">
-        <div class="address">
-            <i class="fa-solid fa-location-dot" style="color: #61656b;"></i> 123 Street, New York, USA 
-            <i class="fa-solid fa-envelope" style="color: #61656b;"></i> info@foody.com
-        </div>
+    <!-- Top Bar -->
+<div class="top-bar">
+  <div class="top-left">
+    <span><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</span>
+    <span><i class="fa-solid fa-envelope"></i> info@example.com</span>
+  </div>
+  <div class="top-right">
+    <span>Follow us:</span>
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-linkedin-in"></i>
+    <i class="fab fa-instagram"></i>
+  </div>
+</div>
 
-        <div class="socials">
-            <p>Follow Us :</p>
-            <i class="fa-brands fa-facebook-f" style="color: #61656b;"></i>
-            <i class="fa-brands fa-twitter" style="color: #61656b;"></i>
-            <i class="fa-brands fa-linkedin-in" style="color: #61656b;"></i>
-            <i class="fa-brands fa-instagram" style="color: #61656b;"></i>
-        </div>
-    </section>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <span class="green">F</span><span class="orange">oo</span><span class="green">dy</span>
+  </div>
 
-    <!--banner-->
-    <section class="banner">
-        <div class="title">
-            <h1 class="green-1">F</h1>
-            <h1 class="red-1">o</h1>
-            <h1 class="red-2">o</h1>
-            <h1 class="green-2">d</h1>
-            <h1 class="green-3">y</h1>
-        </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="product.html">Products</a></li>
+    <li><a href="./contact.html">Contact Us</a></li>
+  </ul>
 
-        <div class="menu">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="product.html">Products</a></li>
-            <li><a href="./contact.html">Contact Us</a></li>
-            
-            <!-- <p class="pages-btn">
-                Pages<i class="fa-solid fa-angle-down"></i>
-            </p> -->
+  <div class="nav-icons">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-regular fa-user"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
+  </div>
 
-            <div class="pages-box">
-                <p>Blog Grid</p>
-                <p>Our Features</p>
-                <p>Testimonial</p>
-                <p>404</p>
-            </div>
-
-            <!-- <p class="contactus">Contact Us</p> -->
-
-            <div class="icons">
-                <i class="fa-solid fa-magnifying-glass " style="color: #555555;"></i>
-                <i class="fa-solid fa-user" style="color: #555555;"></i>
-                <i class="fa-solid fa-bag-shopping" style="color: #555555;"></i>
-            </div>
-        </div>
-
-        <div class="menuicon" id="menuicon">
-        <i class=" fa-2x fa-solid fa-bars " style="color: #838891"></i>
-        </div>
-    </section>
-
-    <!--Sidenavbar-->
-    <section id="sidenav" class="sidenav">
-        <div id="closebtn" class="closebtn">x</div>
-
-        <div class="menu-side">
-            <p>Home</p>
-            <p>About Us</p>
-            <p>Products</p>
-            
-            <p class="pages-btn">
-                Pages<i class="fa-solid fa-angle-down"></i>
-            </p>
-
-            <div class="pages-box">
-                <p>Blog Grid</p>
-                <p>Our Features</p>
-                <p>Testimonial</p>
-                <p>404</p>
-            </div>
-
-            <p class="contactus">Contact Us</p>
-        </div>
-    </section>
-
+  <!-- Mobile Menu Icon -->
+  <div class="menu-icon" id="menuIcon">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+</nav>
     <!--heading-->
     <section class="heading">
         <div class="contact-bar">
@@ -187,73 +145,67 @@
     <div class="map-container" id="map">
     </div>
 
-    <!--Footer-->
-    <section class="footer-container-parent">
-        <div class="footer-container">
-            <div class="fc-1">
-            <div class="footer-1">
-            <h1 class="green-1">F</h1>
-            <h1 class="red-1">o</h1>
-            <h1 class="red-2">o</h1>
-            <h1 class="green-2">d</h1>
-            <h1 class="green-3">y</h1>
-            </div>
+    <!-- footer -->
+<footer class="footer">
+  <div class="footer-container">
 
-            <div class="sub1-footer-1">
-            <p>Rooted in freshness, inspired by nature.<br>Handpicked fruits, vegetables, nuts and spices.<br>Pure goodness, delivered with care.</p>
-            </div>
+    <!-- About -->
+    <div class="footer-box">
+      <h2 class="logo">
+       <h1 class="logo">F<span>oo</span>dy</h1>
+      </h2>
+      <p>
+        Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+        Clita erat ipsum et lorem et sit, sed stet lorem sit clita.
+      </p>
 
-            <div class="sub2-footer-1">
-            <i class="fa-brands fa-twitter" style="color: white"></i>
-            <i class="fa-brands fa-facebook-f" style="color: white;"></i>
-            <i class="fa-brands fa-youtube" style="color: white"></i>
-            <i class="fa-brands fa-linkedin-in" style="color: white;"></i>
-            </div>
-             </div>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-twitter" style="color: #f7f7f8;"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube" style="color: #f7f7f7;"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+      </div>
+    </div>
 
-            <div class="fc-2">
-            <div class="footer-2">
-                <p>Address</p>
-            </div>
+    <!-- Address -->
+    <div class="footer-box">
+      <h3>Address</h3>
+      <ul>
+        <li>📍 123 Street, New York, USA</li>
+        <li>📞 +012 345 67890</li>
+        <li>✉ info@example.com</li>
+      </ul>
+    </div>
 
-            <div class="sub1-footer-2">
-                <p><i class="fa-solid fa-location-dot" style="color: #999987;"></i> 123 Street, New York, USA</p>
-                <p><i class="fa-solid fa-phone" style="color:#999987;"></i> +012 345 67890</p>
-                <p><i class="fa-solid fa-envelope" style="color: #999987;"></i> info@foody.com</p>
-            </div>
-            </div>
+    <!-- Quick Links -->
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul class="links">
+         <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="product.html">Products</a></li>
+        </ul>
+    </div>
+    <!-- Newsletter -->
+    <div class="footer-box">
+      <h3>Newsletter</h3>
+      <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
 
-            <div class="fc-3">
-            <div class="sub1-footer-3">
-                <p>Quick Links</p>
-            </div>
+      <form class="newsletter">
+        <input type="email" placeholder="Your email">
+        <button>SignUp</button>
+      </form>
+    </div>
 
-            <div class="sub2-footer-3">
-                <p><i class="fa-solid fa-angle-right" style="color: #999987;"></i> About Us</p>
-                <p><i class="fa-solid fa-angle-right" style="color: #999987;"></i> Contact Us</p>
-                <p><i class="fa-solid fa-angle-right" style="color: #999987;"></i> Our Services</p>
-                <p><i class="fa-solid fa-angle-right" style="color: #999987;"></i> Terms & Condition</p>
-                <p><i class="fa-solid fa-angle-right" style="color: #999987;"></i> Support</p>
-            </div>
-            </div>
+  </div>
 
-            <div class="fc-4">
-            <div class="sub1-footer-4">
-                <p>Newsletter</p>
-                <p class="p">Get updates on fresh arrivals, seasonal<br>picks, and exclusive offers.</p>
-            </div>
-
-            <div class="sub2-footer-4">
-                <input type="text" placeholder="Your Email"><button>Signup</button>
-            </div>
-            </div>
-        </div>
-
-        <div class="copyright">
-            <p>&copy; Foody.com. All Rights Reserved.</p>
-        </div>
-    </section>
-
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© Foody, All Right Reserved.</p>
+    <p>Designed By <span>Null Pointers</span></p>
+  </div>
+</footer>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7WzNgaKr6xMmQXSvLd9y-X-4G1xud8FU"></script>
     <script src="./contact.js"></script>

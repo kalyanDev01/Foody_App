@@ -15,50 +15,45 @@
 
 <body>
     <div class="headerImg">
-        <div class="address">
-            <div class="address_s1">
-                <i class="fa-solid fa-location-dot" style="color: #555555;"></i>
-                <p>123 Street, New York, USA</p>
-                <i class="fa-solid fa-envelope" style="color: #555555;"></i>
-                <p>info@example.com</p>
-            </div>
-            <div class="address_s2">
-                <p>Follow us:</p>
-                <i class="fa-brands fa-facebook" style="color: #555555;"></i>
-                <i class="fa-brands fa-twitter" style="color: #555555;"></i>
-                <i class="fa-brands fa-linkedin-in" style="color: #555555;"></i>
-                <i class="fa-brands fa-instagram" style="color: #555555;"></i>
-            </div>
-        </div>
-        <div class="header">
-            <div class="header_s1">
-                <h1 class="header_s1_title">F<span style="color: #F65005;">oo</span>dy</h1>
-            </div>
-            <div class="header_s2">
-                <div class="header_s2_1">
-                    <a href="index.html">Home</a>
-                    <a href="aboutus.html"><b>About us</b></a>
-                    <a href="product.html">Products</a>
-                    <a href="contact.html">Contact us</a>
-                </div>
-                <div class="header_s2_2">
-                    <i class="fa-solid fa-magnifying-glass" id="icon1"></i>
-                    <i class="fa-solid fa-circle-user" id="icon2"></i>
-                    <i class="fa-solid fa-cart-arrow-down" id="icon3"></i>
-                </div>
-                
-            </div>
-            <div class="header_s4_mb" id="imgHamburger" onclick="openHamburger()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="header_s5_mb" id="imgClose" onclick="closeHamburger()">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-        </div>
-        <div class="header_s3">
-            <h1 class="header_s3_heading">About Us</h1>
-            <p class="header_s3_flow">Home / Pages / <b>About Us</b></p>
-        </div>
+       <!-- Top Bar -->
+<div class="top-bar">
+  <div class="top-left">
+    <span><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</span>
+    <span><i class="fa-solid fa-envelope"></i> info@example.com</span>
+  </div>
+  <div class="top-right">
+    <span>Follow us:</span>
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-linkedin-in"></i>
+    <i class="fab fa-instagram"></i>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <span class="green">F</span><span class="orange">oo</span><span class="green">dy</span>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="product.html">Products</a></li>
+    <li><a href="./contact.html">Contact Us</a></li>
+  </ul>
+
+  <div class="nav-icons">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-regular fa-user"></i>
+    <i class="fa-solid fa-cart-shopping"></i>
+  </div>
+
+  <!-- Mobile Menu Icon -->
+  <div class="menu-icon" id="menuIcon">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+</nav>
 
     </div>
 
@@ -174,40 +169,67 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <div class="footer">
-        <div class="footer__one">
-            <div class="footer__one__so">
-                <div class="header_s1">
-                    <h1 class="header_s1_title">F<span style="color: #F65005;">oo</span>dy</h1>
-                </div>
-                <p>Fresh organic produce delivered daily to your doorstep</p>
-                <div class="address_s2">
-                    <i class="fa-brands fa-facebook" style="color: #d1d5db;"></i>
-                    <i class="fa-brands fa-twitter" style="color: #d1d5db;"></i>
-                    <i class="fa-brands fa-linkedin-in" style="color: #d1d5db;"></i>
-                    <i class="fa-brands fa-instagram" style="color: #d1d5db;"></i>
-                </div>
-            </div>
-            <div class="footer__one__s1">
-                <h3>Address</h3>
-                <p>123 Street, New York, USA</p>
-                <p>+012 345 67890</p>
-                <p>info@example.com</p>
-            </div>
-            <div class="footer__one__s2">
-                <h3>Quick Links</h3>
-                <a href="">About Us</a>
-                <a href="">Contact Us</a>
-                <a href="">Our Service</a>
-                <a href="">Terms and Condition</a>
-                <a href="">Support</a>
-            </div>
-        </div>
-        <div class="footer__two">
-            <p>&copy; Foody, All Rights Reserved</p>
-        </div>
+    <!-- footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-box">
+      <h2 class="logo">
+       <h1 class="logo">F<span>oo</span>dy</h1>
+      </h2>
+      <p>
+        Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+        Clita erat ipsum et lorem et sit, sed stet lorem sit clita.
+      </p>
+
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-twitter" style="color: #f7f7f8;"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube" style="color: #f7f7f7;"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+      </div>
     </div>
+
+    <!-- Address -->
+    <div class="footer-box">
+      <h3>Address</h3>
+      <ul>
+        <li>📍 123 Street, New York, USA</li>
+        <li>📞 +012 345 67890</li>
+        <li>✉ info@example.com</li>
+      </ul>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul class="links">
+         <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="product.html">Products</a></li>
+        </ul>
+    </div>
+    <!-- Newsletter -->
+    <div class="footer-box">
+      <h3>Newsletter</h3>
+      <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+
+      <form class="newsletter">
+        <input type="email" placeholder="Your email">
+        <button>SignUp</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <p>© Foody, All Right Reserved.</p>
+    <p>Designed By <span>Null Pointers</span></p>
+  </div>
+</footer>
 
 
 </body>

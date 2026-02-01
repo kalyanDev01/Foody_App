@@ -1,49 +1,18 @@
 var storedVal = [];
 let bulkCart = JSON.parse(localStorage.getItem('bulkCart')) || [];
-function openHamburger() {
-    let headerS1 = document.querySelector('.header_s1');
-    headerS1.style.display = "none";
+const menuIcon = document.getElementById("menuIcon");
+const navLinks = document.getElementById("navLinks");
 
-    let headerS2 = document.querySelector('.header_s2');
-    headerS2.style.display = "flex";
-    headerS2.style.flexDirection = "column";
-
-    let header_s4_mb = document.getElementById("imgHamburger");
-    let header_s5_mb = document.getElementById("imgClose");
-    header_s4_mb.style.display = "none";
-    header_s5_mb.style.display = "block";
-
-    let icon1 = document.getElementById("icon1");
-    let icon2 = document.getElementById("icon2");
-    let icon3 = document.getElementById("icon3");
-    icon1.style.display = "none";
-    icon2.style.display = "none";
-    icon3.style.display = "none";
+menuIcon.addEventListener("click", () => {
+  if (navLinks.style.display === "flex") {
+    navLinks.style.display = "none";
+  } else {
+    navLinks.style.display = "flex";
+  }
+});
+function orderPlaced() {
+  alert("Your order is placed ✅");
 }
-
-function closeHamburger() {
-    let headerS1 = document.querySelector('.header_s1');
-    headerS1.style.display = "";
-
-    let headerS2 = document.querySelector('.header_s2');
-    headerS2.style.flexDirection = "row";
-    headerS2.style.display = "none";
-
-
-    let header_s4_mb = document.getElementById("imgHamburger");
-    let header_s5_mb = document.getElementById("imgClose");
-    header_s4_mb.style.display = "flex";
-    header_s5_mb.style.display = "none";
-
-    let icon1 = document.getElementById("icon1");
-    let icon2 = document.getElementById("icon2");
-    let icon3 = document.getElementById("icon3");
-    icon1.style.display = "";
-    icon2.style.display = "";
-    icon3.style.display = "";
-
-}
-
 function addToBulkOrders(obj) {
     let itemName = obj.target.textContent;
     let arr = itemName.split("₹");
