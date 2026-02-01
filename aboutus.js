@@ -89,4 +89,10 @@ function removeFromCart(index) {
 document.addEventListener('DOMContentLoaded', function() {
     updateCartDisplay();  
 });
+function submitForm(){
+    bulkCart = [];
+    localStorage.setItem('bulkCart', JSON.stringify(bulkCart));
+    updateCartDisplay();
+    alert("Order sent for confirmation");
+}
 

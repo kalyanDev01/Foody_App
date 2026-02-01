@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="aboutus.js"></script>
+    
 </head>
 
 <body>
@@ -54,6 +54,10 @@
     <i class="fa-solid fa-bars"></i>
   </div>
 </nav>
+<div class="header_s3">
+            <h1 class="header_s3_heading">About Us</h1>
+            <p class="header_s3_flow">Home / Pages / <b>About Us</b></p>
+        </div>
 
     </div>
 
@@ -149,19 +153,21 @@
 
                 <div class="form-group">
                     <label for="itemsRequired">Items Required *</label>
-                    <div class="inputField">
+                    <div class="inputField" id="inpField">
                         <textarea id="itemsRequired" name="itemsRequired" rows="4"
                             placeholder="e.g. Chilli Powder 50kg (Select from above)" required readonly></textarea>
                     </div>
+                    <span style="color: #F65005; font-weight: 400; padding: 10px;">* Select from above</span>
                 </div>
 
                 <div class="form-group">
                     <label for="amount">Total Amount *</label>
-                    <div class="inputField">
-                        <input type="text" id="amount" name="amount" placeholder="e.g. ₹30 (Select from above)" required readonly>
+                    <div class="inputField" id="inpField">
+                        <input type="text" id="amount" name="amount" placeholder="e.g. ₹30 (Select from above)" required readonly>                        
                     </div>
+                    <span style="color: #F65005; font-weight: 400; padding: 10px;">* Value will populate immediately(after adding to cart)</span>
                 </div>
-                <button type="submit" class="formattedButton">
+                <button type="submit" class="formattedButton" onclick="submitForm()">
                     Submit
                 </button>
                 
@@ -233,5 +239,5 @@
 
 
 </body>
-
+<script src="aboutus.js"></script>
 </html>
