@@ -11,7 +11,8 @@ Foody is a **responsive front-end web application** built using **HTML, CSS, and
 * **Hariram** – Product Section
 * **Benito** – Product Section
 * **Dharisni** – Contact Us Section
-Mentors : Akshay, Jerlin
+
+* **Mentors** – Akshay, Jerlin
 
 ---
 
